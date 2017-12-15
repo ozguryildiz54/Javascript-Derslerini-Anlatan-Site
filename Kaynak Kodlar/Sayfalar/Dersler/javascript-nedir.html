@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Javascript Dersleri</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  <script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+  
+  <a href="#" class="yukari">
+  <img src="../../images/1.png" border="0" title="Yukarı Çık" />
+  </a>
+  
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Özgür YILDIZ</a></h1>
+          <h2>Web siteme hoş geldiniz! Javascript hakkında tüm detayları öğrenmek için ders akışını takip edin.</h2>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="../../index.html">Anasayfa</a></li>
+          <li><a href="../Menü/web-tasarım.html">Web Tasarım İlkeleri</a></li>
+          <li><a href="../Menü/ogretici-siteler.html">Öğretici Siteler</a></li>
+          <li><a href="../Menü/ornek-uygulamalar.html">Örnek Uygulamalar</a></li>
+          <li><a href="../Menü/web-tasarım-araçları.html">Web Tasarım Araçları</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h2>Derslerin Listesi</h2>
+          <ul>
+            <li><a href="javascript-nedir.html">Javascript Nedir?</a></li>
+            <li><a href="metodlar.html">Metodlar</a></li>
+            <li><a href="nesneler.html">Nesneler</a></li>
+            <li><a href="olaylar.html">Olaylar</a></li>
+            <li><a href="browser-nesneleri.html">Browser Nesneleri</a></li>
+            <li><a href="mesaj-kutuları.html">Mesaj Kutulari</a></li>
+            <li><a href="javascript-nesneleri.html">Javascript Nesneleri</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Javascript Nedir?</h1>
+        <div>
+						<div align="justify">
+      <p>Javascript, Netscape firması tarafından oldukça çok duyulan C   dilinden türetilmiştir.Javascript, html gibi, komutları düz yazı dosyası olarak kaydedilen ve işleyebilmesi için bir   yorumlayıcıya (browsera) ihtiyacı olan bir dildir.Javascript, dinamik sayfalar yapma ihtiyacı ortaya çıkmaya başladığı zaman üretilmiş bir programlama dilidir. Javascript'te ait özelliklri maddeler halinde özetlersek; </p>
+      <ul>
+        <li>Javascript, html in içine gömülür, burada browserlar tarafından yorumlanır.</li>
+        <li>Javascript browsera bağımlı olarak yorumlanır,  bazı javascript   komutları farklı browserlarda farklı şekilde yorumlanabileceği gibi, bazen hiç bir etki yaratmaz.</li>
+        <li>Html içindeki javascript kodlarının browserlar tarafından algılanması için, kodlar &lt;script&gt;.......&lt;/script&gt; etiketleri içine yazılır.Ya da ayrı bir dosyada yazılarak ".js" uzantısıyla kaydedildikten sonra, gerekli duyulduğu yerde bağlantı yolu ile çağırılır.</li>
+        <li>Javascript, ancak bir olay halinde işler.Burada olaydan kasıt, sayfanın açılması, kullanıcının klavyeden değer girmesi, bir butona tıklaması ve benzeri olaylar olabilir. </li>
+        </ul>
+      <p>Web Browser programları, Javascript komutlarını yorumlayabilmek için, html in   içinde &lt;SCRIPT LANGUAGE="Javascript"&gt; etiketini ararlar ve &lt;/SCRIPT&gt;   etiketini gördükleri anda bu yoruma son verip, html yorumuna dönerler.Bu   etikette, kullanılan javascript sürümü de belirtilir.Netscape ileri sürümlere ait   komutları  tanıyorsa icra eder, tanımıyorsa görmezden gelir. IE ise   belirtilen sürümden ileri komutları tanımaz ve hata mesajı verir.Şu an en güvenli sürüm 1.2’dir.Örneklerde   de bu sürüm belirtilecektir.Javascript’in birinci sürümünü kastetmek   amacıyla &lt;SCRIPT LANGUAGE="Javascript1.0"&gt; veya "&lt;SCRIPT   LANGUAGE="Javascript1"&gt; yazılmaz, sadece "Javascript" yazılır.</p>
+      <p>Javascript kodlarının başladığını ve sürümünü belirtmek için, &lt;SCRIPT LANGUAGE="Javascript1.2"&gt; kullanıldığı gibi son zamanlar ikinci bir kullanım şekilde vardır.Bu kullanım şekli ise şöyledir; &lt;SCRIPT type="text/javascript" language="JavaScript1.2"&gt;<br>
+        Sizde yapacak olduğunuz uygulamalarda istediğiniz bir tanesini kullanabilirsiniz. <br>
+      </p>
+      </div>
+					</div>
+      </div>
+    </div>
+    <footer>
+      <p>Kişisel blogum için tıklayın : <a class="boya" href="http://www.yldzozgur.wordpress.com">yldzozgur.wordpress.com</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <script type="text/javascript" src="../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="../../js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

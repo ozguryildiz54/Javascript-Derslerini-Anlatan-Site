@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Javascript Dersleri</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  <script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+  
+  <a href="#" class="yukari">
+  <img src="../../images/1.png" border="0" title="Yukarı Çık" />
+  </a>
+  
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Özgür YILDIZ</a></h1>
+          <h2>Web siteme hoş geldiniz! Javascript hakkında tüm detayları öğrenmek için ders akışını takip edin.</h2>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="../../index.html">Anasayfa</a></li>
+          <li><a href="../Menü/web-tasarım.html">Web Tasarım İlkeleri</a></li>
+          <li><a href="../Menü/ogretici-siteler.html">Öğretici Siteler</a></li>
+          <li><a href="../Menü/ornek-uygulamalar.html">Örnek Uygulamalar</a></li>
+          <li><a href="../Menü/web-tasarım-araçları.html">Web Tasarım Araçları</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h2>Derslerin Listesi</h2>
+          <ul>
+            <li><a href="javascript-nedir.html">Javascript Nedir?</a></li>
+            <li><a href="metodlar.html">Metodlar</a></li>
+            <li><a href="nesneler.html">Nesneler</a></li>
+            <li><a href="olaylar.html">Olaylar</a></li>
+            <li><a href="browser-nesneleri.html">Browser Nesneleri</a></li>
+            <li><a href="mesaj-kutuları.html">Mesaj Kutulari</a></li>
+            <li><a href="javascript-nesneleri.html">Javascript Nesneleri</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Browser Nesneleri</h1>
+        <div>
+						<td bgcolor="#f5f5f5"><p align="justify">Browserın javascript dilindeki adı <u>Navigator</u>’dır.Ziyaretçinin Browser   programı ne olursa olsun,   javascript için navigatordır.Nesnelerine de navigator nesneleri denir.Bunların başında, browser’ın pencereleri  gelir. </p>
+    <p align="justify">Şimdiki derse  kadar bazı derslerimizde javascript kodunda navigator(browser) penceresini ve bazı özelliklerini kullandık.Şimdi pencere özelliklerinin hepsini verelim.</p>
+    <p align="justify"><u>Pencere(window) özellikleri:</u></p>
+    <table width="520" border="1" align="center" cellpadding="0" cellspacing="0" bgcolor="#dcdcdc">
+      <tbody><tr>
+        <td width="90" valign="top">width </td>
+        <td width="439">Navigator’ın sayfanın görüntülenmesi için ekrandaki temiz alanının piksel   olarak genişliği. </td>
+      </tr>
+      <tr>
+        <td valign="top">height </td>
+        <td>Navigator’ın sayfanın görüntülenmesi için ekrandaki temiz alanının piksel   olarak yüksekliği. </td>
+      </tr>
+      <tr>
+        <td valign="top">toolbar </td>
+        <td>Navigator’ın araç çubuğunun gösterilmesi (=1) veya gizlenmesi (=0). </td>
+      </tr>
+      <tr>
+        <td valign="top">menubar </td>
+        <td>Navigator’ın menü çubuğunun gösterilmesi (=1) veya gizlenmesi (=0). </td>
+      </tr>
+      <tr>
+        <td valign="top">scrollbars </td>
+        <td>Navigator’ın sağ ve alt kenardaki kaydırma çubuklarının gösterilmesi (=1)   veya gizlenmesi (=0). </td>
+      </tr>
+      <tr>
+        <td valign="top">resizable </td>
+        <td>Navigator penceresinin büyütülebilir-küçültülebilir olması (=1) veya   olmaması (=0). </td>
+      </tr>
+      <tr>
+        <td valign="top">status </td>
+        <td>Navigator penceresinin alt kenarındaki mesaj çubuğunun gösterilmesi (=1)   veya gizlenmesi (=0). </td>
+      </tr>
+      <tr>
+        <td valign="top">location </td>
+        <td>Navigator penceresinin URL adres çubunun gösterilmesi (=1) veya gizlenmesi   (=0). </td>
+      </tr>
+      <tr>
+        <td valign="top">directories </td>
+        <td>Netscape’de ikinci araç çubunun gösterilmesi (=1) veya gizlenmesi (=0). </td>
+      </tr>
+      <tr>
+        <td valign="top">copyhistory </td>
+        <td>Mevcut Navigator penceresinin history kaydının (daha önce ziyaret edilen URl   adreslerinin tutulduğu çizelgenin) yeni pencereye de kopyalanması. </td>
+      </tr>
+      <tr>
+        <td valign="top">outerWidth </td>
+        <td>Navigator penceresinin piksel olarak genişliği. </td>
+      </tr>
+      <tr>
+        <td valign="top">outerHeight </td>
+        <td>Navigator penceresinin piksel olarak yüksekliği. </td>
+      </tr>
+      <tr>
+        <td valign="top">left </td>
+        <td>Navigator penceresinin ekranın sol kenarından piksel olarak uzaklığı. </td>
+      </tr>
+      <tr>
+        <td valign="top">top </td>
+        <td>Navigator penceresinin ekranın üst kenarından piksel olarak uzaklığı. </td>
+      </tr>
+      <tr>
+        <td valign="top">alwaysRaised </td>
+        <td>Navigator penceresinin masaüstünde açık bütün pencerelerin üzerinde   kalmasını sağlar. (Sadece Windows ve MacOS’de işler.) </td>
+      </tr>
+      <tr>
+        <td valign="top">z-lock </td>
+        <td>Navigator penceresinin içi tıklansa bile masaüstünde açık bütün pencerelerin   altında kalmasını sağlar. (Sadece Windows ve MacOS’de işler.) </td>
+      </tr>
+    </tbody></table>    
+    <p align="justify"> 1, evet ve 0, hayır anlamına gelmektedir.Bunların yerine yes (evet) ve no (hayır) da kullanılabilir. </p>
+    <p align="justify">Javascriptin yeni navigator penceresi açma metodu, <strong>window.open()</strong> şöyledir:</p>
+    <p align="justify">pencerenesnesi = window.open("sayfa_adresi", "YeniPencereninAdı", "pencere_özellikleri")</p>
+    <p align="justify">"sayfa_adresi"nin kullanılması zorunlu değildir.Açılacak pencerede önceden varolan bir sayfanın açılması istendiğinde adresi ve adı burada belirtilir.İstenmezse çift tırnak işaretlerinin içi boş bırakılır.Pencereye ait tüm özellikler çift tırnaklar içinde içinde belirtilir.Kullanımda yer alan "pencerenesnesi" şeklinde belirtilen unsur ise pencerenin kapatılması gibi işlemlerde pencereye hitap etmek için kullanılır.</p>
+    <p align="justify">Pencereyi kapatmak için <strong>xxx.close()</strong> metodu kullanılır."xxx" yerine pencereye hitap etmek için kullanılan isim yazılır.Eğer isim belirtilmezse browser komutlarının icra edildiği pencere kapatılır. </p>
+    <p align="justify">Şimdi bunları bir örnekle görelim.</p>
+ 
+    <p align="justify">Örneğimizde pencere açma ve kapatma olayları fonksiyonlar ile yapıldı.Açılan pencerede üzerinde işlemler yaparken ve bu pencereyi kapatırken, pencereye hitap etmek için verdiğimiz ismi kullandığımıza dikkat edin.</p>
+    <p align="justify">Örnekte <strong>window.status = ".........."</strong> komutu kullanıldı.Bu komut  javascript'te durum çubuğuna yazı yazdırmak için kullanılır.Bizde yenia açılan pencernin durum çubuğuna yazı yadırmak için bu komuttan yararlandık.</p>
+    <p align="justify"><br>
+    Browser kendisine ait bazı özellikler nedeni ile javascript açısından nesne olarak algılanır.Bu açıdan browserın javascript için şu özellikleri vardır:</p>
+    
+    <p>Örnek ile kullandığınız browsera ait özellikleri göreceksiniz.</p>    </td>
+					</div>
+      </div>
+    </div>
+    <footer>
+      <p>Kişisel blogum için tıklayın : <a class="boya" href="http://www.yldzozgur.wordpress.com">yldzozgur.wordpress.com</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <script type="text/javascript" src="../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="../../js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

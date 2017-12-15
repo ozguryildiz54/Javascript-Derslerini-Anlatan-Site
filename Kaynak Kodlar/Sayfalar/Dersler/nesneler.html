@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Javascript Dersleri</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  <script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+  
+  <a href="#" class="yukari">
+  <img src="../../images/1.png" border="0" title="Yukarı Çık" />
+  </a>
+  
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Özgür YILDIZ</a></h1>
+          <h2>Web siteme hoş geldiniz! Javascript hakkında tüm detayları öğrenmek için ders akışını takip edin.</h2>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="../../index.html">Anasayfa</a></li>
+          <li><a href="../Menü/web-tasarım.html">Web Tasarım İlkeleri</a></li>
+          <li><a href="../Menü/ogretici-siteler.html">Öğretici Siteler</a></li>
+          <li><a href="../Menü/ornek-uygulamalar.html">Örnek Uygulamalar</a></li>
+          <li><a href="../Menü/web-tasarım-araçları.html">Web Tasarım Araçları</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h2>Derslerin Listesi</h2>
+          <ul>
+            <li><a href="javascript-nedir.html">Javascript Nedir?</a></li>
+            <li><a href="metodlar.html">Metodlar</a></li>
+            <li><a href="nesneler.html">Nesneler</a></li>
+            <li><a href="olaylar.html">Olaylar</a></li>
+            <li><a href="browser-nesneleri.html">Browser Nesneleri</a></li>
+            <li><a href="mesaj-kutuları.html">Mesaj Kutulari</a></li>
+            <li><a href="javascript-nesneleri.html">Javascript Nesneleri</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Nesneler</h1>
+        <div>
+						<div align="justify">
+      <p>Javascript ile yazılan programlar, browser   programlarının <u>belge&nbsp;nesne&nbsp;modeli</u> denen kurallar içinde   hareket etmek zorundadır.Javascripti, browserın sunduğu hiyerarşik nesne modeli   ile sınırlıdır. Aşağıda Netscape’in belge nesne modeli verilmiştir.Internet Explorer çok daha fazla nesneyi kontrol etmenize imkan verir; fakat derslerimizde her browserda algılanacak örneklere yer verdiğimiz için bu nesne modeli verilmiştir. </p>
+      <table width="362" align="center">
+        <tbody><tr>
+          <td><img src="../../images/nesnemodeli.JPG" galleryimg="no" width="361" height="374"></td>
+        </tr>
+      </tbody></table>
+      <p>Önceki derslerimizde ekrana bir yazı yazdırmak istediğimizde bunu document.write komutu ile yapmıştık.Bu işlemde şöyle bir mantık vardır.Biz, pencerenin içindeyiz, hitap edeceğimiz nesne ise döküman, öyleyse yazmaya hitap edeceğimiz nesnenin bulunduğu kademeden başlamalıyız. </p>
+      <p>Nesnelerin kullanım mantığında aşamalılık vardır.Bulunduğun düzeyden başlarak, hitap edeceğin nesne düzeyine kadar belirtilmesi gerekir.Daha önceki derslerimizden hatırlayacağınız gibi, herhangi bir form aracıyla işlem yapacağımızda form.araççubuğunun_adi.value demiştik.Aslında biz pencerenin içinde bulunduğumuz için yazmaya döküman nesnesinden başlamalıyız.document.form.araççubuğunun_adi.value şeklinde tanımlanmalı; fakat javascript kurallar yönünden esnek bir dil olmamasına rağmen, bu kullanımda bie seneklik sağlamıştır.</p>
+      <p><u>Şemadaki nesnelerin html karşılıkları :</u> </p>
+      <table width="400" align="center" bgcolor="#dcdcdc">
+        <tbody><tr>
+          <td><u>Nesneler</u></td>
+          <td><u>Html Karşılıkları</u> </td>
+        </tr>
+        <tr>
+          <td width="192">Pencere (Window)</td>
+          <td width="196">Yok</td>
+        </tr>
+        <tr>
+          <td>Çerçeve (Frame)</td>
+          <td>&lt;frame&gt;</td>
+        </tr>
+        <tr>
+          <td>Belge (Document)</td>
+          <td>&lt;body&gt;</td>
+        </tr>
+        <tr>
+          <td>Form</td>
+          <td>&lt;form&gt;</td>
+        </tr>
+        <tr>
+          <td>Düğme(button)</td>
+          <td>&lt;input type="button"&gt; </td>
+        </tr>
+        <tr>
+          <td>İşaret Kutusu</td>
+          <td>&lt;input type="checkbox"&gt; </td>
+        </tr>
+        <tr>
+          <td>Gizli (Hidden)</td>
+          <td>&lt;input type="hidden"&gt; </td>
+        </tr>
+        <tr>
+          <td>Dosya Çıkart </td>
+          <td>&lt;input type="file"&gt; </td>
+        </tr>
+        <tr>
+          <td>Parola (password)</td>
+          <td>&lt;input type="password"&gt; </td>
+        </tr>
+        <tr>
+          <td>Radyo düğmesi (Radio)</td>
+          <td>&lt;input type="radio"&gt; </td>
+        </tr>
+        <tr>
+          <td>Başa dön (Reset)</td>
+          <td>&lt;input type="reset"&gt; </td>
+        </tr>
+        <tr>
+          <td>Seç (Select)</td>
+          <td>&lt;select&gt;</td>
+        </tr>
+        <tr>
+          <td>Gönder (Submit) </td>
+          <td>&lt;input type="submit"&gt; </td>
+        </tr>
+        <tr>
+          <td>Metin (Text)</td>
+          <td>&lt;input type="text"&gt; </td>
+        </tr>
+        <tr>
+          <td>Metin Alanı (Textarea)</td>
+          <td>&lt;textarea&gt; </td>
+        </tr>
+        <tr>
+          <td>Bağ (Link)</td>
+          <td>&lt;a href="xxx" &gt; </td>
+        </tr>
+        <tr>
+          <td>Bağlantı (Anchor)</td>
+          <td>&lt;a name="xxx"&gt; </td>
+        </tr>
+        <tr>
+          <td>Resim (Image)</td>
+          <td>&lt;img src="xxx"&gt; </td>
+        </tr>
+        <tr>
+          <td>Plugin	&lt;embed&gt;</td>
+          <td>&lt;embed rsc="xxx"&gt; </td>
+        </tr>
+        <tr>
+          <td>Alan (Area)</td>
+          <td>&lt;map&gt;</td>
+        </tr>
+        <tr>
+          <td>Applet</td>
+          <td>&lt;applet&gt;</td>
+        </tr>
+      </tbody></table>
+    <p>Pencere nesnesi ile ayrıntılı bilgi sonraki derslerimizde verilecektir.Burada kısaca, pencere nesnesine ait html etiketi olmamasına karşın, bu nesnelerin değişik tanımlamalar ile kullanıldığı gösterildi.Pencere nesnesine atıfta bulanabilmek için, window.open işlemi bir değişkene atandı.Daha sonra bu değişken ismi kullanılarak yeni açılan pencereye yazı yazıldı.</p>
+    <p>Pencere açma işleminin window.open() ile yapıldığını gördük.Penceryi kapatmak için ise window.close()  kullanılır.İsterseniz window.status = "........." ile penceresinin alt çervesindeki durum alanına yazı da yazdırabilirsiniz. </p>
+    </div>
+					</div>
+      </div>
+    </div>
+    <footer>
+      <p>Kişisel blogum için tıklayın : <a class="boya" href="http://www.yldzozgur.wordpress.com">yldzozgur.wordpress.com</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <script type="text/javascript" src="../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="../../js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

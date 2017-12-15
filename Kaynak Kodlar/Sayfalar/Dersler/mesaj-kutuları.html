@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Javascript Dersleri</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  <script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+  
+  <a href="#" class="yukari">
+  <img src="../../images/1.png" border="0" title="Yukarı Çık" />
+  </a>
+  
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Özgür YILDIZ</a></h1>
+          <h2>Web siteme hoş geldiniz! Javascript hakkında tüm detayları öğrenmek için ders akışını takip edin.</h2>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="../../index.html">Anasayfa</a></li>
+          <li><a href="../Menü/web-tasarım.html">Web Tasarım İlkeleri</a></li>
+          <li><a href="../Menü/ogretici-siteler.html">Öğretici Siteler</a></li>
+          <li><a href="../Menü/ornek-uygulamalar.html">Örnek Uygulamalar</a></li>
+          <li><a href="../Menü/web-tasarım-araçları.html">Web Tasarım Araçları</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h2>Derslerin Listesi</h2>
+          <ul>
+            <li><a href="javascript-nedir.html">Javascript Nedir?</a></li>
+            <li><a href="metodlar.html">Metodlar</a></li>
+            <li><a href="nesneler.html">Nesneler</a></li>
+            <li><a href="olaylar.html">Olaylar</a></li>
+            <li><a href="browser-nesneleri.html">Browser Nesneleri</a></li>
+            <li><a href="mesaj-kutuları.html">Mesaj Kutulari</a></li>
+            <li><a href="javascript-nesneleri.html">Javascript Nesneleri</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Mesaj Kutulari</h1>
+        <div>
+						<td bgcolor="#f5f5f5"><p>Navigator penceresi, üç tür mesaj kutusu açabilir. Bunlar:</p>
+      <ul>
+        <li> alert &nbsp;&nbsp;&nbsp;&nbsp;-&gt; Basit bilgi verme   kutusu </li>
+        <li> confirm -&gt; Doğrulama kutusu</li>
+        <li>prompt -&gt; kKullanıcının bilgi girme kutusudur.   </li>
+      </ul>
+    <p class="style2"><br>
+      alert(......)</p>
+    <p align="justify">Uyarı kutusu   yapmaya yarayan bu kodu daha önceki derslerimizde de kullanmıştı. JavaScript değişkenlerini ve tırnak içinde olmak şartıyla html   kodlarını uyarı kutusuyla gösterebiliriz ve <strong>"+"</strong> işareti ile birleştirilir.</p>
+    <p><br>
+      <br>
+      <span class="style2">confirm(......)</span></p>
+    <p align="justify">Bu mesaj kutusu ile kullanıcının onayı alınır. Bu kutuyu yaratmak için <strong>confirm(...)</strong> komutu bir değişkene eşitlenir.Kullanıcının onayı true, onay vermemesi ise false şeklinde ifadelendirilir.</p>
+    <p><br>
+      <span class="style2">prompt(......)</span></p>
+    <p align="justify"><strong>prompt </strong>sayesinde kullanıcıyla program arasında bir veri alışverişi yapılır.prompt, tıpkı confirm gibi bir değişkene eşitlenir.prompt komutu iki değer alır. İlk değer yazı kutusunda yer alan bilgi verici yazıyı   belirler, ikinci değer ise yazı kutusunun yazma yerinde yer alan yazıyı   belirler, bu yazı genellikle girdi bilgisi içerir.Kullanıcının yazdığı yazı, prompt komutunun eşitlendiği değişkene değer olarak atanır.Yazı   kutusunda iptal düğmesi yer almaktadır. Kullanıcı bu düğmeye   bastığında değişken null  değeri alacaktır.</p>
+					</div>
+      </div>
+    </div>
+    <footer>
+      <p>Kişisel blogum için tıklayın : <a class="boya" href="http://www.yldzozgur.wordpress.com">yldzozgur.wordpress.com</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <script type="text/javascript" src="../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="../../js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

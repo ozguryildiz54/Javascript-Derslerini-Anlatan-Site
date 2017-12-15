@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Javascript Dersleri</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  <script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+  
+  <a href="#" class="yukari">
+  <img src="../../images/1.png" border="0" title="Yukarı Çık" />
+  </a>
+  
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Özgür YILDIZ</a></h1>
+          <h2>Web siteme hoş geldiniz! Javascript hakkında tüm detayları öğrenmek için ders akışını takip edin.</h2>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="../../index.html">Anasayfa</a></li>
+          <li><a href="../Menü/web-tasarım.html">Web Tasarım İlkeleri</a></li>
+          <li><a href="../Menü/ogretici-siteler.html">Öğretici Siteler</a></li>
+          <li><a href="../Menü/ornek-uygulamalar.html">Örnek Uygulamalar</a></li>
+          <li><a href="../Menü/web-tasarım-araçları.html">Web Tasarım Araçları</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h2>Derslerin Listesi</h2>
+          <ul>
+            <li><a href="javascript-nedir.html">Javascript Nedir?</a></li>
+            <li><a href="metodlar.html">Metodlar</a></li>
+            <li><a href="nesneler.html">Nesneler</a></li>
+            <li><a href="olaylar.html">Olaylar</a></li>
+            <li><a href="browser-nesneleri.html">Browser Nesneleri</a></li>
+            <li><a href="mesaj-kutuları.html">Mesaj Kutulari</a></li>
+            <li><a href="javascript-nesneleri.html">Javascript Nesneleri</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Javascript Nesneleri</h1>
+        <div>
+						<div align="justify">
+      <p>Şimdiye kadar ele aldığımız  bütün nesneler, javascript’e html ve browser   tarafından sunuluyordu.Fakat javascript, kendi kendisine nesneler de   oluşturabilir.Örneğin, javascript  ile dizi değişkenleri oluşturuldukları anda bunlar Array   nesnesi olurlar, yeni özellikleri ve metodları olur. </p>
+      <p>Bu aşamada string nesnesini ele alalım.Javascript bir alfanümerik değişkeni ele aldığı anda bu onun için bir string   nesnesi olur ve dolayısıyla, bir değişkenden öte bazı özellikler ve metodlar   kazanır.</p>
+      <p>Daha önceki derslerimizde string değişkenler tanımlanmıştı.Örneğin;var isim = "Mehmet", içeriği "Mehmet" olan string(karakter) bir değişkendir.Aynı zamanda strind değişkenler, aşağıdaki şekilde de tanımlanabilir.</p>
+      <p align="center">var isim = new String("Mehmet") </p>
+      <p align="justify"><strong>"new"</strong> javascript‘e yeni bir nesne oluşturması için verilen komuttur.Burada   javascript’e yeni bir string nesnesi oluşturmasını, bunun içeriğini "Mehmet" yapmasını, ve bu nesneyi, "isim" isimli değişkene atamasını   söylüyoruz.Değişken oluşturma açısından ikisi arasında hiç bir fark olmamakla   birlikte, bu ikinci yöntem bize, alfanümerik değişkenlerin özel niteliğini,   nesne olduklarını gösteriyor.Bu sayede alfanümerik değişkenlerin yani String   nesnelerinin bazı ilave özelliklerinden yararlanabiliyoruz.Bu özelliklerin sık   kullanılanlarını şöyle sıralayabiliriz:</p>
+      <table width="475" border="1" align="center" cellpadding="0" cellspacing="0" bgcolor="#dcdcdc">
+        <tbody><tr>
+          <td valign="top">length </td>
+          <td><div align="left">Nesnenin uzunluğunu belirtir. Örneğin isim.length, bize 6 değerini   verir. </div></td>
+        </tr>
+        <tr>
+          <td valign="top">charAt(i) </td>
+          <td><div align="left">i ile belirttiğiniz pozisyondaki karakteri verir. isim.charAt(1) bize   "e" değerini verir. </div></td>
+        </tr>
+        <tr>
+          <td valign="top">indexOf(nnn) </td>
+          <td><div align="left">nnn ile belirttiğiniz karakterlerin string içinde ilk geçtiği konumun   endeksini verir. isim.indexOf("e") ifadesi, 1 değerini verir. </div></td>
+        </tr>
+        <tr>
+          <td valign="top">lastIndexOf(nn) </td>
+          <td><div align="left">nnn ile belirttiğiniz karakterlerin String içinde geçtiği son konumun   endeksini verir.isim.lastIndexOf("e"), bize 4 değerini verir. </div></td>
+        </tr>
+        <tr>
+          <td valign="top">substring(i,j) </td>
+          <td><div align="left">String nesnesinin i’de başlayan ve j’de biten bölümünü verir.isim.subtring(0,3) ifadesi bize "Meh" değerini verir. </div></td>
+        </tr>
+      </tbody></table>
+      <p align="justify">String nesnesinin kendine özgü metodları vardır.Bunlar:</p>
+      <table width="475" border="1" align="center" cellpadding="0" cellspacing="0" bgcolor="#dcdcdc">
+        <tbody><tr>
+          <td width="115" valign="top">.bold() </td>
+          <td valign="top">Bağladığınız String nesnesini koyu yapar. Örneğin isim.bold(), size   "&lt;b&gt;Mehmet&lt;/b&gt;" metnini verir. </td>
+        </tr>
+        <tr>
+          <td width="115" valign="top">.fontcolor("renk") </td>
+          <td valign="top">String nesnesinin görüntülenme rengini belirler. Örneğin   isim.fontcolor("red") size "&lt;font color ="red"&gt;Mehmet&lt;/font&gt;" değerini verir. </td>
+        </tr>
+        <tr>
+          <td width="115" valign="top">.fontsize("ölçü") </td>
+          <td valign="top">String nesnesinin görüntülenmesinde harf büyüklüğünü belirler. Örneğin   isim.fontsize("24") size "&lt;font size="24"&gt;Mehmet&lt;/font&gt;" değerini verir. </td>
+        </tr>
+        <tr>
+          <td width="115" valign="top">.italics() </td>
+          <td valign="top">String nesnesinin itelik harfle görüntülenmesini sağlar. Örneğin   isim.italics() size "&lt;i&gt;Mehmet&lt;/i&gt;" değerini verir. </td>
+        </tr>
+        <tr>
+          <td width="115" valign="top">.toLowerCase() </td>
+          <td valign="top">String nesnesinin görüntülenmesi sırasında bütün harflerinin küçük harf   olmasını sağlar. Örneğin isim.toLowerCase () size "mehmet"   değerini verir. </td>
+        </tr>
+        <tr>
+          <td width="115" valign="top">.toUpperCase() </td>
+          <td valign="top">String nesnesinin görüntülenmesi sırasında bütün harflerinin büyük harf   olmasını sağlar. Örneğin isim.toLowerCase () size "MEHMET "   değerini verir. </td>
+        </tr>
+      </tbody></table>
+      <p align="justify">Yapacağınız uygulamalarda bunları kullanarak değişik etkiler yaratabilirsiniz.Bu özellikler genelde formdan bilgi girişlerinde bir standart sağlamak için kullanılır.Ziyaretçi nasıl giriş yaparsa yapsın, girilen bilgiler sizin istediğiniz düzene sokulabilir. </p>
+    </div>
+					</div>
+      </div>
+    </div>
+    <footer>
+      <p>Kişisel blogum için tıklayın : <a class="boya" href="http://www.yldzozgur.wordpress.com">yldzozgur.wordpress.com</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <script type="text/javascript" src="../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="../../js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

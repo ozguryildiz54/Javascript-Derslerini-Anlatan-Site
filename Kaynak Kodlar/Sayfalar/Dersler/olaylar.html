@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Javascript Dersleri</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  <script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+  
+  <a href="#" class="yukari">
+  <img src="../../images/1.png" border="0" title="Yukarı Çık" />
+  </a>
+  
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Özgür YILDIZ</a></h1>
+          <h2>Web siteme hoş geldiniz! Javascript hakkında tüm detayları öğrenmek için ders akışını takip edin.</h2>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="../../index.html">Anasayfa</a></li>
+          <li><a href="../Menü/web-tasarım.html">Web Tasarım İlkeleri</a></li>
+          <li><a href="../Menü/ogretici-siteler.html">Öğretici Siteler</a></li>
+          <li><a href="../Menü/ornek-uygulamalar.html">Örnek Uygulamalar</a></li>
+          <li><a href="../Menü/web-tasarım-araçları.html">Web Tasarım Araçları</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h2>Derslerin Listesi</h2>
+          <ul>
+            <li><a href="javascript-nedir.html">Javascript Nedir?</a></li>
+            <li><a href="metodlar.html">Metodlar</a></li>
+            <li><a href="nesneler.html">Nesneler</a></li>
+            <li><a href="olaylar.html">Olaylar</a></li>
+            <li><a href="browser-nesneleri.html">Browser Nesneleri</a></li>
+            <li><a href="mesaj-kutuları.html">Mesaj Kutulari</a></li>
+            <li><a href="javascript-nesneleri.html">Javascript Nesneleri</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Olaylar</h1>
+        <div>
+						<div align="justify">
+      <p>Javascript'te yapılan bir çok şeyde olay kullanılır.Kullanıcının sayfa üzerinde yaptığı her türlü işlem   olaydır.Sayfayı açmak, bir nesnenin üzerine tıklamak, fareyle bir nesnenin   üzerine gelmek, bir tuşa basmak, bir değeri değiştirmek.Bunların hepsi bir   olaydır.Şimdi javascript'te sıklıkla kullanılan olaylardan bahsedelim. </p>
+      <p class="style2">onClick olayı : </p>
+      <p>Bu derse kadar <strong>onclick</strong> (tıklanıldığında) olayını düğme üzerinde birçok   uygulamamızda kullandık.Bu olayı uygulamak için mutlaka düğme kullanılacak diye bir şart yoktur,   herhangi bir html nesnesi de olabilir.onClick olayı; button, reset, submit, radio, checkbox ve area ile kullanılabilir.</p>
+  
+    <p class="style2">onDblClick olayı : </p>
+    <p>onclick olayına çok benzeyen diğer olay: <strong>ondblclick</strong> (çift   tıklanıldığında)tir.Adından da anlaşılacağı gibi kullanıcının fareyle çift   tıklamasını ifade eder.Oldukça alışılmış bir olaydır.onDblClick olayının yarattığı etkiyi görmek için yukarıdaki örnekte onClick yerine onDblClick yazın.</p>
+    <p><br>
+      <br>  
+      <span class="style2">  onSubmit olayı : </span></p>
+    <p>Javascript’in, htm i tamamladığı noktaların başında form ve form yoluyla elde   edilecek bilgilerle ilgili işlemler gelir.Bu işlemlerin başında ise formdaki   bilgilerin server a gönderilmeden önce, daha browserda iken doğrulanması ve   hatalardan arındırılması vardır.Javascript, bunu ziyaretçinin formda, submit(gönder) olayına yol açan herhangi bir düğmenin tıklanması halinde yapar.Bunu şimdi yapacağımız örnekle daha iyi anlayacaksınız.</p>
+    
+    <p>&lt;form method="get" <strong>onSubmit="return onay()"</strong>&gt; olayı ile form, gönderilmeden önce bir fonksiyona gönderiliyor.return kelimesi ile fonksiyondan değer geleceği anlaşılıyor.onay() fonksiyonunu incelersek confirm komudu ile üzerinde tamam ve iptal düğmelerinin bulunduğu bir pencere açılıyor.Tamam düğmesine basıldığında form bilgisi gönderiliyor.Bunu adres çubuğuna bakara ta görebilirsiniz.Eğer iptal düğmesine basılırsa kullanıaln return deyimlerinden dolayı, forma geri dönülüyor.</p>
+    <p><br>
+        <span class="style2">onReset olayı :</span></p>
+    <p>Formlara koyulan reset(başa dön) düğmesi, bir formdaki bütün bilgilerin   silinmesini sağlar. Browserın geri düğmesini tıklamak dahil, hiç bir eylem   ziyaretçinin yanlışlıkla bastığı sil düğmesinin sildiğini geri getiremez.Fakat   javascript ile böyle bir hata önlenebilir.Çünkü sil düğmesinin   oluşturduğu "reset" olayını yönlendiren onReset, bize bu imkanı verir.Bunu bir örnekle ifade edelim.</p>
+    
+    <br>
+    <br>
+    <p class="style2"><br>
+      onChange olayı :</p>
+    <p> <br>
+    Html sayfasında  değişiklik, ziyaretçinin içine bir şeyler   yazabildiği veya bazı işaretler koyabildiği üç alandır.Bunlar : Text (Metin), Textarea   (Metinalanı) ve Select (Seç) etiketleridir. Kullanıcı klavyeye basarak, bu alanlara metin girebilir.Bu durum html sayfasında   değişiklik olması anlamına gelir.Select etiketinin sağladığı   şıklardan birini seçen kullanıcı da sayfada değişiklik olayına yol açar.</p>
+    <p>&nbsp;</p>
+    <p><span class="style2">onFocus ve onBlur
+      olayları :</span>        </p>
+    <p>Html sayfasında   da browserın focusunu(dikkat odağını) üzerinde topladığı veya odağın   çekildiği üç nesne olabilir.Bunlar: Text (Metin), Textarea (Metinalanı) ve Select (Seç)   etiketleridir.Çünkü ziyaretçinin sadece bu etiketlerin oluşturduğu nesnelere   klavyenin dikkatini çekme hakkı vardır.Bu nesnelerden biri tıklanınca   browserın dikkati bu nesneye dönmüş, yani "focus" olayı olmuş demektir.Bu   durumda, biz de bu olayı yönlendiren <strong>onFocus</strong> u kullanabiliriz. Aynı mantıkla,   ziyaretçi browserın dikkatini bu nesneden başka bir yere çektiği zaman bu nesne   focus’u kaybeder, blur(netlikten çıkma, flulaşma) olayı olur. Bunu da <strong>onBlur</strong>   ile yönlendiririz. Şimdi bu olayların kullanıldığı bir örnek yapalım. </p>
+    
+    <p>Javascript, üstteki kutuya adınızı yazdıktan sonra başka bir yeri   tıkladığınızda olan iş, "ad" isimli metin kutusunun "blur" olayına onBlur’un   çağırdığı goster() fonksiyonu ile; alttaki kutuyu mesleğinizi yazmak üzere   tıkladığınız anda "meslek" kutusunda olan "focus" olayına da uyar() fonksiyonu   ile karşılık veriyor.</p>
+    <p>&nbsp;</p>
+    <p class="style2">onMouseOver ve onMouseOut olayları :</p>
+    <p><strong>onMouseOver</strong> olayı, mouse imlecinin bir html nesnesi üzerine gelmesini   ifade eder. <br>
+      <strong>onMouseOut</strong> olayı ise , mouse imlecinin bir html nesnesi üzerinden gitmesini   ifade eder. </p>
+    <p align="left">Şimdi bu olayları güzel bir örnekle gösterelim.</p>
+    
+    <p><br>
+      <span class="style2">onLoad ve onUnLoad olayları :</span> </p>
+    <p>Javascript açısından browserın bir html sayfasını görüntülemeyi bitirmesi   sayfanın load (yükleme), başka bir sayfaya geçilmesi ise önceki sayfanın   unload(yüklenmişlikten çıkması) sayılır ve bu iki olayı <strong>onLoad</strong> ve <strong>onUnLoad</strong>   yönlendiricileri ile karşılayabiliriz.Browser açısından asıl sayfa, body bölümüdür.Head   bölümündeki komutlar, sayfanın nasıl görüntüleneceğine ilişkin komutlar   içerir.Bizde şimdi body etiketini kullnarak bir örnek yapalım.</p>
+    
+    <p>Javascript'te sıklıkla kullanılan olaylar bu kadardır.Sizde değişik örnekler yaparak olaylar konusunu daha iyi anlayabilirsiniz. </p>
+    </div>
+					</div>
+      </div>
+    </div>
+    <footer>
+      <p>Kişisel blogum için tıklayın : <a class="boya" href="http://www.yldzozgur.wordpress.com">yldzozgur.wordpress.com</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <script type="text/javascript" src="../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="../../js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>
